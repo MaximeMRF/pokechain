@@ -1,5 +1,7 @@
 # Pokechain
-[](./logo.png)
+title:  |
+  Pokechain
+![](./logo.png){with=1in}
 Repository pour le hackathon Starton x Epitech
 
 ## Problème
