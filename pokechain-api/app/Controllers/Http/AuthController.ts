@@ -1,10 +1,11 @@
 import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from 'App/Models/User'
 import Hash from '@ioc:Adonis/Core/Hash'
+import UserValidator from 'App/Validators/UserValidator'
 
 export default class AuthController {
     public async login({ auth, request, response }: HttpContextContract) {
-        const { email, password } = request.all()
+        const { email, password } = await request.validate(UserValidator)
         const user = await User.findBy('email', email)
         if (!user) {
             return response.status(401).json({ error: 'Unauthorized' })
@@ -17,7 +18,7 @@ export default class AuthController {
         return response.json({ token })
     }
     public async register({ auth, request, response }: HttpContextContract) {
-        const { email, password } = request.all()
+        const { email, password } = await request.validate(UserValidator)
         const user = await User.create({ email, password })
         const token = await auth.use('api').generate(user)
         return response.json({ token })

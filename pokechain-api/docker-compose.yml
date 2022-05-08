@@ -1,0 +1,32 @@
+version: "3.3"
+services:
+  panel:
+      image: "phpmyadmin:latest"
+      environment:
+        - PMA_HOST=db
+        - MARIADB_ROOT_PASSWORD=root
+      ports:
+        - "8060:80"
+      networks:
+        - pokechain-stack
+      depends_on:
+        - db
+      restart: always
+  db:
+      image: "mariadb:latest"
+      environment:
+        - MYSQL_ROOT_PASSWORD=root
+        - MYSQL_DATABASE=pokechain
+        - MYSQL_USER=pokechain-admin
+        - MYSQL_PASSWORD=pokepoke
+      ports:
+        - "3306:3306"
+      networks:
+        - pokechain-stack
+      volumes:
+        - db-data:/var/lib/mysql/data
+      restart: always
+networks:
+    pokechain-stack:
+volumes:
+    db-data:
