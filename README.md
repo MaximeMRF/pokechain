@@ -57,14 +57,15 @@ Le backend fera l'interface entre le front et l'api de starton.
 
 L'équipe Elsass Frei Technologie est composée de:
 
-    - **Maxime**: développeur du backend.
-    - **Thomas**: designer des maquettes.
-    - **Ramsford**: développeur du front.
-    - **Clément**: développeur du front.
+- **Maxime**: développeur du backend.
+- **Thomas**: designer des maquettes.
+- **Ramsford**: développeur du front.
+- **Clément**: développeur du front.
 
 ## Rendu
 
 La vidéo explicative du projet est disponible [ici](https://www.youtube.com/watch?v=npm5dI6sakY)
+Voici quelques captures d'écran de notre maquette. Le front n'est pas encore au point.
 
 ![](./assets/home.png)
 ![](./assets/collection.png)
