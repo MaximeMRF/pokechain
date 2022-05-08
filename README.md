@@ -1,12 +1,12 @@
 # Pokechain
+[](./logo.png)
 Repository pour le hackathon Starton x Epitech
 
 ## Problème
-Notre projet est un projet pour lutter contre la falsification d'authenticité d'objets grâce à la blockchain.
-Dans notre cas des cartes pokémons certifiés par des entreprises spécialisées tel que [PCA](https://pcagrade.com).
+Notre projet à pour but de proposer une solution contre la falsification de certificat (ou d'authenticité d'objets comme un sac Hermès par exemple).Dans notre cas ce sera les cartes pokémons certifiés pour leur grade par des entreprises spécialisées tel que [PCA](https://pcagrade.com).
 
 ## Solution
-Notre solution est de stocker les cartes certifiées sur la blockchain. Pour arriver à notre but nous avons décider de créer une application web qui permettra de voir nos différentes cartes. Cette application web se découpe en plusieurs parties:
+Notre solution est de stocker les grade certifié des cartes sur la blockchain. Pour arriver à notre but nous avons décider de créer une application web qui permettra de voir et gérer nos différentes cartes. Cette application web se découpe en plusieurs parties:
 
 - le front en Nuxt.js
 - le back en Adonis.js
@@ -50,3 +50,16 @@ Le backend fera l'interface entre le front et l'api de starton.
  # Lancement du serveur de développement
  npm run dev
  ```
+
+## Equipe et commentaires
+
+L'équipe Elsass Frei Technologie est composée de:
+
+    - **Maxime**: développeur du backend.
+    - **Thomas**: designer des maquettes.
+    - **Ramsford**: développeur du front.
+    - **Clément**: développeur du front.
+
+## Rendu
+
+
