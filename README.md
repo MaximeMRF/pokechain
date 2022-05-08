@@ -17,7 +17,7 @@ Repository pour le hackathon Starton x Epitech
 
  ## Installation de la base de données
 
- Vérifiez que docker et docker-compose sont installés
+ Vérifiez que docker et docker-compose sont installés.
 
  ```bash
  # cd dans le dossier du projet
@@ -25,3 +25,15 @@ Repository pour le hackathon Starton x Epitech
  # lancer la stack docker qui contient la base de données et le panel phpmyadmin
  docker-compose up -d
  ```
+
+ ## Installation du frontend
+
+ ```bash
+ # cd dans le dossier du projet
+ cd pokechain-front
+ # installation des dépendances
+ npm install
+ # Lancement du serveur de développement
+ npm run dev
+ ```
+ 
