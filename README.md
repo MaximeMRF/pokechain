@@ -1,6 +1,6 @@
 # Pokechain
 
-![](./logo.png)
+![](./assets/logo.png)
 
 Repository pour le hackathon Starton x Epitech
 
@@ -64,4 +64,7 @@ L'équipe Elsass Frei Technologie est composée de:
 
 ## Rendu
 
+La vidéo explicative du projet est disponible [ici](https://www.youtube.com/watch?v=npm5dI6sakY)
 
+![](./assets/home.png)
+![](./assets/collection.png)

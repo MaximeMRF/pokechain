@@ -20,12 +20,6 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.get('/', async () => {
-  return { hello: 'world' }
-})
-
-// curl -X GET http://localhost:3333/
-
 Route.post('/login', 'AuthController.login')
 
 // curl -X POST -H "Content-Type: application/json" -d '{"email": "test@test.test", "password": "test"}' http://localhost:3333/login
@@ -33,3 +27,7 @@ Route.post('/login', 'AuthController.login')
 Route.post('/register', 'AuthController.register')
 
 // curl -X POST -H "Content-Type: application/json" -d '{"email": "test@test.test", "password": "test"}' http://localhost:3333/register
+
+Route.get('/wallet', 'WalletsController.index').middleware('auth')
+
+Route.post('/wallet', 'WalletsController.add').middleware('auth')
